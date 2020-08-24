@@ -18,6 +18,7 @@ public class Main {
 
        Cat cat = new Cat("Barsick", 20);
        System.out.println(cat.jumpHeight());
+       cat.voice();
 
        Dog dog = new Dog();
 
