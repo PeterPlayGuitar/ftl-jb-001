@@ -14,5 +14,8 @@ public class Main {
         Cat catVar = new Cat();
         catVar.voice();
         Cat barsick = new Cat();
+
+        com.company.L004.Cat catL004 = new com.company.L004.Cat();
+        catL004.voice();
     }
 }
