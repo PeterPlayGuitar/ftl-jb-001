@@ -45,5 +45,21 @@ public class Main {
        duck.landing();
        duck.isTheBirdFlying();
        duck.showSpeed();
+
+       Dog[] homelessDogs = new Dog[] {
+            Dog.ofHomeless(2),
+            Dog.ofHomeless(3),
+            Dog.ofHomeless(5),
+       };
+
+       System.out.println(homelessDogs.length);
+       System.out.println(homelessDogs[0]);
+       System.out.println(homelessDogs[1]);
+       System.out.println(homelessDogs[2]);
+
+       Dog[] dogs = Dog.randomArray();
+       System.out.println(dogs[0]);
+       System.out.println(dogs[1]);
+       System.out.println(dogs[2]);
     }
 }
