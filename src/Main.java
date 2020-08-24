@@ -37,9 +37,13 @@ public class Main {
 
        Duck duck = new Duck();
        duck.voice();
+
        duck.takeOff();
        duck.isTheBirdFlying();
+       duck.showSpeed();
+
        duck.landing();
        duck.isTheBirdFlying();
+       duck.showSpeed();
     }
 }
