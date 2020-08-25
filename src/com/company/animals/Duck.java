@@ -1,7 +1,9 @@
 package com.company.animals;
 
 public class Duck extends Bird{
-    public Duck(){}
+    public Duck(){
+        super();
+    }
 
     @Override
     public void voice() {
