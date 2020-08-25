@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.animals.*;
+import com.company.L013.*;
 import java.util.*;
 
 public class Main {
@@ -74,6 +75,10 @@ public class Main {
         while(indexLikedList < dogsLinkedList.size()){
             System.out.println(dogsLinkedList.get(indexLikedList));
             indexLikedList++;
+        }
+
+        for(int i = 0; i < 100; i++){
+            SwitchExample.run();
         }
     }
 }
