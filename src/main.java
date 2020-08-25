@@ -1,77 +1,75 @@
-import com.company.L013.SwitchExample;
-import com.company.animals.Cat;
-import com.company.animals.Dog;
-import com.company.animals.Duck;
+package com.company;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+import com.company.animals.*;
+import com.company.L013.*;
+import java.util.*;
 
 public class main {
+
     public static void main(String[] args) {
-        //HelloWorld.run();
-        //POJO.run();
+       //HelloWorld.run();
+       //POJO.run();
 
 
-        //Cat catVar = new Cat();
-        //catVar.voice();
-        //Cat barsick = new Cat();
+       //Cat catVar = new Cat();
+       //catVar.voice();
+       //Cat barsick = new Cat();
 
-        //com.company.L004.Cat catL004 = new com.company.L004.Cat();
-        //catL004.voice();
+       //com.company.L004.Cat catL004 = new com.company.L004.Cat();
+       //catL004.voice();
 
-        Cat cat = new Cat("Barsick", 20);
-        System.out.println(cat.jumpHeight());
-        cat.voice();
+       Cat cat = new Cat("Barsick", 20);
+       System.out.println(cat.jumpHeight());
+       cat.voice();
 
-        Dog dog = new Dog();
+       Dog dog = new Dog();
 
-        dog.goToStick(14);
-        dog.whereTheDog();
+       dog.goToStick(14);
+       dog.whereTheDog();
 
-        dog.goToStick(20);
-        dog.whereTheDog();
+       dog.goToStick(20);
+       dog.whereTheDog();
 
-        dog.goToStick(5);
-        dog.whereTheDog();
+       dog.goToStick(5);
+       dog.whereTheDog();
 
-        dog.voice();
+       dog.voice();
 
-        Dog homelessDog = Dog.ofHomeless(100);
+       Dog homelessDog = Dog.ofHomeless(100);
 
-        Duck duck = new Duck();
-        duck.voice();
+       Duck duck = new Duck();
+       duck.voice();
 
-        duck.takeOff();
-        duck.isTheBirdFlying();
-        duck.showSpeed();
+       duck.takeOff();
+       duck.isTheBirdFlying();
+       duck.showSpeed();
 
-        duck.landing();
-        duck.isTheBirdFlying();
-        duck.showSpeed();
+       duck.landing();
+       duck.isTheBirdFlying();
+       duck.showSpeed();
 
         List<Dog> dogs = Dog.randomArray();
         for(int i = 0; i < dogs.size(); i++){
             System.out.println(dogs.get(i));
         }
 
-        List<Dog> homelessDogs = Arrays.asList( new Dog[] {
-                Dog.ofHomeless(2),
-                Dog.ofHomeless(3),
-                Dog.ofHomeless(5),
-        });
+       List<Dog> homelessDogs = Arrays.asList( new Dog[] {
+            Dog.ofHomeless(2),
+            Dog.ofHomeless(3),
+            Dog.ofHomeless(5),
+       });
 
-        System.out.println(homelessDogs.size());
-        for(Dog dogItem : homelessDogs){
+       System.out.println(homelessDogs.size());
+       for(Dog dogItem : homelessDogs){
             System.out.println(dogItem);
-        }
+       }
 
-        List<Dog> dogsLinkedList = new LinkedList<>();
-        dogsLinkedList.add(Dog.ofHomeless(10));
-        dogsLinkedList.add(Dog.ofHomeless(10));
-        dogsLinkedList.add(Dog.ofHomeless(10));
-        dogsLinkedList.add(Dog.ofHomeless(10));
-        dogsLinkedList.add(Dog.ofHomeless(10));
+       List<Dog> dogsLinkedList = new LinkedList<>();
+       dogsLinkedList.add(Dog.ofHomeless(10));
+       dogsLinkedList.add(Dog.ofHomeless(10));
+       dogsLinkedList.add(Dog.ofHomeless(10));
+       dogsLinkedList.add(Dog.ofHomeless(10));
+       dogsLinkedList.add(Dog.ofHomeless(10));
 
         int indexLikedList = 0;
         while(indexLikedList < dogsLinkedList.size()){
