@@ -2,6 +2,8 @@ package com.company;
 
 import com.company.animals.*;
 import com.company.L013.*;
+
+import java.security.DigestInputStream;
 import java.util.*;
 
 public class main {
@@ -62,6 +64,8 @@ public class main {
        System.out.println(homelessDogs.size());
        for(Dog dogItem : homelessDogs){
             System.out.println(dogItem);
+            dogItem.setName(String.valueOf((new Random()).nextLong()));
+            System.out.println(dogItem.getName());
        }
 
        List<Dog> dogsLinkedList = new LinkedList<>();
@@ -78,7 +82,7 @@ public class main {
         }
 
         for(int i = 0; i < 100; i++){
-            SwitchExample.run();
+            // SwitchExample.run();
         }
     }
 }
