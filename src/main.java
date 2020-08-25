@@ -84,5 +84,12 @@ public class main {
         for(int i = 0; i < 100; i++){
             // SwitchExample.run();
         }
+
+        System.out.println(duck.getMoveType());
+        System.out.println(dog.getMoveType().getValue());
+
+        if(dog.getMoveType() == MoveType.WALK){
+            System.out.println("Can walk");
+        }
     }
 }
