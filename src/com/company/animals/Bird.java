@@ -2,7 +2,7 @@ package com.company.animals;
 
 import java.text.BreakIterator;
 
-public class Bird extends Animal implements Flight {
+public abstract class Bird extends Animal implements Flight {
     protected Boolean flyModeActive = false;
 
     public Bird() {
@@ -30,4 +30,5 @@ public class Bird extends Animal implements Flight {
     public void setFlyModeActive(Boolean flyModeActive) {
         this.flyModeActive = flyModeActive;
     }
+
 }
