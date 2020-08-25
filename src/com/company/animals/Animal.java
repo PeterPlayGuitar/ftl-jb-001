@@ -10,10 +10,11 @@ class Animal {
     public Animal(String name, Integer weight){
         this.name = name;
         this.weight = weight;
+        canFly = false;
     }
 
     public Animal(){
-
+        canFly = false;
     }
 
     public void voice(){
