@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.L019.StringExample;
 import com.company.animals.*;
 import com.company.L013.*;
 
@@ -91,5 +92,7 @@ public class main {
         if(dog.getMoveType() == MoveType.WALK){
             System.out.println("Can walk");
         }
+
+        StringExample.run();
     }
 }
