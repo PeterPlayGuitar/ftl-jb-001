@@ -47,6 +47,11 @@ public class Main {
        duck.isTheBirdFlying();
        duck.showSpeed();
 
+        List<Dog> dogs = Dog.randomArray();
+        for(int i = 0; i < dogs.size(); i++){
+            System.out.println(dogs.get(i));
+        }
+
        List<Dog> homelessDogs = Arrays.asList( new Dog[] {
             Dog.ofHomeless(2),
             Dog.ofHomeless(3),
@@ -54,13 +59,21 @@ public class Main {
        });
 
        System.out.println(homelessDogs.size());
-       System.out.println(homelessDogs.get(0));
-       System.out.println(homelessDogs.get(1));
-       System.out.println(homelessDogs.get(2));
+       for(Dog dogItem : homelessDogs){
+            System.out.println(dogItem);
+       }
 
-       List<Dog> dogs = Dog.randomArray();
-       System.out.println(dogs.get(0));
-       System.out.println(dogs.get(1));
-       System.out.println(dogs.get(2));
+       List<Dog> dogsLinkedList = new LinkedList<>();
+       dogsLinkedList.add(Dog.ofHomeless(10));
+       dogsLinkedList.add(Dog.ofHomeless(10));
+       dogsLinkedList.add(Dog.ofHomeless(10));
+       dogsLinkedList.add(Dog.ofHomeless(10));
+       dogsLinkedList.add(Dog.ofHomeless(10));
+
+        int indexLikedList = 0;
+        while(indexLikedList < dogsLinkedList.size()){
+            System.out.println(dogsLinkedList.get(indexLikedList));
+            indexLikedList++;
+        }
     }
 }
