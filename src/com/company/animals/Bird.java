@@ -2,18 +2,20 @@ package com.company.animals;
 
 import java.text.BreakIterator;
 
-public class Bird extends Animal {
+public class Bird extends Animal implements Flight {
     protected Boolean flyModeActive = false;
 
     public Bird() {
         super(MoveType.FLY);
     }
 
-    public final void takeOff() {
+    @Override
+    public void takeOff() {
         flyModeActive = true;
     }
 
-    public final void landing() {
+    @Override
+    public void landing() {
         flyModeActive = false;
     }
 
