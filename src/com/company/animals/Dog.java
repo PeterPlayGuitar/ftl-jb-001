@@ -9,7 +9,7 @@ public class Dog extends Animal {
     }
 
     public Dog() {
-        canFly = false;
+        super();
     }
 
     public static List<Dog> randomArray() {
