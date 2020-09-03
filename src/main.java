@@ -2,6 +2,7 @@ package com.company;
 
 import com.company.L019.StringExample;
 import com.company.L020.TypeConversion;
+import com.company.L024.AnonExample;
 import com.company.animals.*;
 import com.company.L013.*;
 
@@ -97,5 +98,7 @@ public class main {
         }
 
         TypeConversion.run();
+
+        AnonExample.run();
     }
 }
