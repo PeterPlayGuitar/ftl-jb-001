@@ -20,6 +20,7 @@ import com.company.task003.Task003;
 import com.company.task004.Task004;
 import com.company.task005.Task005;
 import com.company.task006.Task006;
+import com.company.task007.Task007;
 
 public class main {
 
@@ -29,6 +30,7 @@ public class main {
         //Task003.run();
         //Task004.run();
         //Task005.run();
-        Task006.run();
+        //Task006.run();
+        Task007.run();
     }
 }
