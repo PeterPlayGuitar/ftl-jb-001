@@ -15,10 +15,12 @@ import java.util.*;
 
 import com.company.animals.Animal;
 import com.company.task001.OutputTask;
+import com.company.task002.Task002;
 
 public class main {
 
     public static void main(String[] args) throws Animal.WeightException, IOException {
-        OutputTask.run();
+        //OutputTask.run();
+        Task002.run();
     }
 }
