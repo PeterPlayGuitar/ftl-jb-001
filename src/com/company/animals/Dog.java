@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Dog extends Animal {
-    public Dog(String name, Integer weight) {
-        super(name, weight,MoveType.WALK);
+    public Dog(String name, AnimalWeight weight) {
+        super(name, weight, MoveType.WALK);
     }
 
     public Dog() {
@@ -15,9 +15,9 @@ public class Dog extends Animal {
     public static List<Dog> randomArray() {
         List<Dog> dogs = new ArrayList<>();
 
-        dogs.add(Dog.of("Sharick", 3));
-        dogs.add(Dog.of("Bubble", 1));
-        dogs.add(Dog.of("Tusick", 5));
+        dogs.add(Dog.of("Sharick", new AnimalWeight(3, AnimalWeight.WeightType.GR)));
+        dogs.add(Dog.of("Bubble", new AnimalWeight(1, AnimalWeight.WeightType.GR)));
+        dogs.add(Dog.of("Tusick", new AnimalWeight(5, AnimalWeight.WeightType.GR)));
 
         return dogs;
     }
@@ -36,11 +36,11 @@ public class Dog extends Animal {
         System.out.println(currentPosition);
     }
 
-    public static Dog of(String name, Integer weight) {
+    public static Dog of(String name, AnimalWeight weight) {
         return new Dog(name, weight);
     }
 
-    public static Dog ofHomeless(Integer weight) {
+    public static Dog ofHomeless(AnimalWeight weight) {
         Dog dog = new Dog();
         dog.weight = weight;
         return dog;
