@@ -5,6 +5,7 @@ import com.company.L020.TypeConversion;
 import com.company.L024.AnonExample;
 import com.company.L026.FileExample;
 import com.company.L027.ThreadExample;
+import com.company.L028.House;
 import com.company.animals.*;
 import com.company.L013.*;
 
@@ -110,8 +111,22 @@ public class main {
         } catch (Animal.WeightException ignore) {
         }
 
-        FileExample.run();
+        //FileExample.run();
+        //ThreadExample.run();
 
-        ThreadExample.run();
+        House house = new House.Builder()
+                .optHasSwimmingPool(true)
+                .build();
+
+        System.out.println(house.toString());
+
+        House houseFull = new House.Builder()
+                .optHasFancyStatues(true)
+                .optHasGarage(true)
+                .optHasGarden(true)
+                .optHasSwimmingPool(true)
+                .build();
+
+        System.out.println(houseFull.toString());
     }
 }
