@@ -21,6 +21,5 @@ public class ThreadExample {
         runAnotherThread("thread 3");
         runAnotherThread("thread 4");
         runAnotherThread("thread 5");
-
     }
 }
