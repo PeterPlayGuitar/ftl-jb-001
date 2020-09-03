@@ -4,6 +4,7 @@ import com.company.L019.StringExample;
 import com.company.L020.TypeConversion;
 import com.company.L024.AnonExample;
 import com.company.L026.FileExample;
+import com.company.L027.ThreadExample;
 import com.company.animals.*;
 import com.company.L013.*;
 
@@ -110,5 +111,7 @@ public class main {
         }
 
         FileExample.run();
+
+        ThreadExample.run();
     }
 }
