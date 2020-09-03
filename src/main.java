@@ -17,12 +17,14 @@ import com.company.animals.Animal;
 import com.company.task001.OutputTask;
 import com.company.task002.Task002;
 import com.company.task003.Task003;
+import com.company.task004.Task004;
 
 public class main {
 
     public static void main(String[] args) throws Animal.WeightException, IOException {
         //OutputTask.run();
         //Task002.run();
-        Task003.run();
+        //Task003.run();
+        Task004.run();
     }
 }
