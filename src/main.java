@@ -29,6 +29,7 @@ import com.company.task012.Task012;
 import com.company.task013.Task013;
 import com.company.task014.Task014;
 import com.company.task015.Task015;
+import com.company.task016.Task016;
 
 public class main {
 
@@ -47,6 +48,7 @@ public class main {
         //Task012.run();
         //Task013.run();
         //Task014.run();
-        Task015.run();
+        //Task015.run();
+        Task016.run();
     }
 }
