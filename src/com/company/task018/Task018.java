@@ -7,7 +7,7 @@ public class Task018 {
         Pyramid pyramid = new Pyramid(3, 1);
         Cylinder cylinder = new Cylinder(15, 1);
         Ball ball = new Ball(2);
-
+ 
         Box box = new Box(boxMaxVolume);
 
 
