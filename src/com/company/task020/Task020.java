@@ -26,5 +26,11 @@ public class Task020 {
         System.out.println("box's current volume: " + box.getVolume());
         System.out.println("adding cylinder: " + box.add(cylinder));
         System.out.println("box's current volume: " + box.getVolume());
+
+        System.out.println("\nComparing time!\n");
+
+        System.out.println("Pyramid volume: " + pyramid.getVolume() + "; cylinder volume: " + cylinder.getVolume() + "; pyramid.compareTo(cylinder): " + pyramid.compareTo(cylinder));
+        System.out.println("Cylinder volume: " + cylinder.getVolume() + "; pyramid volume: " + pyramid.getVolume() + "; cylinder.compareTo(pyramid): " + cylinder.compareTo(pyramid));
+        System.out.println("Box volume: " + box.getVolume() + "; ball volume: " + ball.getVolume() + "; box.compareTo(ball): " + box.compareTo(ball));
     }
 }

@@ -19,4 +19,9 @@ public class Cylinder implements ISolidOfRevolution {
     public double getVolume() {
         return height * Math.PI * radius * radius;
     }
+
+    @Override
+    public int compareTo(IShape o) {
+        return Double.compare(getVolume(), o.getVolume());
+    }
 }

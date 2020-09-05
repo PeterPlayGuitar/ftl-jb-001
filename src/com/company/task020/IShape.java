@@ -1,5 +1,5 @@
 package com.company.task020;
 
-interface IShape {
+interface IShape extends Comparable<IShape> {
     double getVolume();
 }

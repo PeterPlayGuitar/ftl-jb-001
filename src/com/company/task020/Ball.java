@@ -17,4 +17,9 @@ public class Ball implements ISolidOfRevolution {
     public double getVolume() {
         return (4 * Math.PI * radius * radius * radius) / 3.;
     }
+
+    @Override
+    public int compareTo(IShape o) {
+        return Double.compare(getVolume(), o.getVolume());
+    }
 }

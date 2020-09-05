@@ -1,6 +1,6 @@
 package com.company.task020;
 
-public class Box implements IShape {
+public class Box implements IShape{
 
     protected double maxVolume;
     protected double volume;
@@ -26,5 +26,10 @@ public class Box implements IShape {
     @Override
     public double getVolume() {
         return volume;
+    }
+
+    @Override
+    public int compareTo(IShape shape) {
+        return Double.compare(volume, shape.getVolume());
     }
 }
