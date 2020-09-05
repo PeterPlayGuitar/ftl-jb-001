@@ -13,4 +13,9 @@ public class Pyramid implements IShape {
     public double getVolume() {
         return (s * h) / 3;
     }
+
+    @Override
+    public int compareTo(IShape o) {
+        return Double.compare(getVolume(), o.getVolume());
+    }
 }
