@@ -45,10 +45,11 @@ import com.company.task029.Task029;
 import com.company.task030.Task030;
 import com.company.task031.Task031;
 import com.company.task032.Task032;
+import com.company.task033.Task033;
 
 public class main {
 
-    public static void main(String[] args) throws Animal.WeightException, IOException {
+    public static void main(String[] args) {
         //OutputTask.run();
         //Task002.run();
         //Task003.run();
@@ -79,6 +80,7 @@ public class main {
         //Task029.run();
         //Task030.run();
         //Task031.run();
-        Task032.run();
+        //Task032.run();
+        Task033.run(args);
     }
 }
